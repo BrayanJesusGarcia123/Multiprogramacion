@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiprogramming Simulation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/Styles.css">
+</head>
+
+<body>
+
+    <header class="bg-danger text-white">
+        <div class="container">
+            <!-- Logos a los lados -->
+            <div class="row align-items-center">
+                <div class="col-md-2 mt-3">
+                    <img src="img/logosistema.png" alt="Logo 1" style="max-width: 80%; margin-bottom: 10px;">
+                </div>
+                <div class="col-md-8 text-center">
+                    <!-- Texto centrado -->
+                    <h5>UNIVERSIDAD FRANCISCO DE PAULA SANTANDER</h5>
+                    <h6>SISTEMAS OPERATIVOS - MULTIPROGRAMACION</h6>
+                </div>
+                <div class="col-md-2 text-right mt-3">
+                    <img src="img/logoufps.png" alt="Logo 2" style="max-width: 88%; margin-bottom: 10px;">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="vistas/concepto.html">Concepto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="vistas/guia.html">Manual Usuario</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <main>
+
+        <div class="container mt-5">
+            <p>Bienvenido Usuario, acontinuacion agrega los proceso con su respectivo ID Tiempo de ejecucion de la cpu
+                Jobs (trabajo) y su entrada o salida I/0</p>
+            <div class="form-group">
+                <button id="btnAgregar" class="btn btn-primary">Agregar Proceso</button>
+                <button id="btnCambiar" class="btn btn-info">Cambiar Orden De Ordenamiento</button>
+            </div>
+
+            <div id="contenedorCampos" class="mb-3"></div>
+            <div id="alerta" class="alert alert-danger" role="alert"></div>
+
+            <div class="form-group">
+                <button id="btnLeer" class="btn btn-success">Ver Proceso Agregado </button>
+            </div>
+
+
+            <div id="tabla" class="mb-3"></div>
+
+            <div class="form-group">
+                <button id="btnMulti" class="btn btn-secondary">Multiprogramming</button>
+            </div>
+
+            <div id="cuadrosInformativos" class="row">
+                <div class="col-md-6">
+                    <div class="cuadro-informativo">
+                        <div class="cuadro-color naranja"></div>
+                        <div class="cuadro-texto">Ejecución de CPU</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="cuadro-informativo">
+                        <div class="cuadro-color azul"></div>
+                        <div class="cuadro-texto">Entrada / Salida (I/O)</div>
+                    </div>
+                </div>
+            </div>
+            <div id="contenedorMulti" class="mb-3"></div>
+        </div>
+
+    </main>
+
+    <script src="JavaScript/App.js"></script>
+
+
+</body>
+
+</html>

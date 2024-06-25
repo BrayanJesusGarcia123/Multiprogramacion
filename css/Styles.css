@@ -1,0 +1,25 @@
+/* Estilos para los cuadros informativos */
+.cuadro-informativo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cuadro-color {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.naranja {
+  background-color: orange;
+}
+
+.azul {
+  background-color: blue;
+}
+
+.cuadro-texto {
+  font-size: 14px;
+}

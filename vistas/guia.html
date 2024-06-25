@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Usuario</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .manual-container {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .manual-header {
+            background-color: #343a40;
+            color: white;
+            padding: 1.5rem;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .manual-header h2 {
+            margin: 0;
+        }
+
+        .manual-content {
+            padding: 2rem;
+        }
+
+        .manual-section {
+            margin-bottom: 1.5rem;
+        }
+
+        .manual-section h3 {
+            color: #343a40;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 0.5rem;
+        }
+
+        .manual-section p,
+        .manual-section ol {
+            color: #495057;
+        }
+
+        .manual-footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #343a40;
+            color: white;
+            border-radius: 0 0 5px 5px;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-danger text-white py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-2">
+                    <img src="../img/logosistema.png" alt="Logo 1" style="max-width: 80%;">
+                </div>
+                <div class="col-md-8 text-center">
+                    <h5>UNIVERSIDAD FRANCISCO DE PAULA SANTANDER</h5>
+                    <h6>SISTEMAS OPERATIVOS - MANUAL DE USUARIO</h6>
+                </div>
+                <div class="col-md-2 text-right">
+                    <img src="../img/logoufps.png" alt="Logo 2" style="max-width: 88%;">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="concepto.html">Concepto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="manual.html">Manual Usuario</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="manual-container">
+            <div class="manual-header">
+                <h2>Manual de Usuario</h2>
+            </div>
+            <div class="manual-content">
+                <div class="manual-section">
+                    <h3>Introducción</h3>
+                    <p>Bienvenido Usuario, a continuación se explica cómo agregar procesos con su respectivo ID, tiempo
+                        de ejecución de la CPU, trabajos (jobs) y su entrada o salida (I/O).</p>
+                </div>
+
+                <div class="manual-section">
+                    <h3>Agregar Proceso</h3>
+                    <p>Para agregar un nuevo proceso, sigue estos pasos:</p>
+                    <ol>
+                        <li>Haz clic en el botón <strong>Agregar Proceso</strong>.</li>
+                        <li>Se abrirá un formulario donde podrás ingresar los detalles del proceso:
+                            <ul>
+                                <li><strong>ID:</strong> Identificador único del proceso.</li>
+                                <li><strong>Tiempo de ejecución de la CPU:</strong> Tiempo que el proceso necesita de la
+                                    CPU.</li>
+                                <li><strong>Jobs:</strong> Trabajo o tareas que el proceso realizará.</li>
+                                <li><strong>I/O:</strong> Entrada o salida que el proceso necesita.</li>
+                            </ul>
+                        </li>
+                        <li>Después de ingresar los detalles, haz clic en <strong>Guardar</strong> para agregar el
+                            proceso a la lista.</li>
+                    </ol>
+                </div>
+
+                <div class="manual-section">
+                    <h3>Ver Procesos Agregados</h3>
+                    <p>Para ver los procesos que has agregado:</p>
+                    <ol>
+                        <li>Haz clic en el botón <strong>Ver Proceso Agregado</strong>.</li>
+                        <li>Se mostrará una tabla con los detalles de todos los procesos que has agregado.</li>
+                    </ol>
+                </div>
+
+                <div class="manual-section">
+                    <h3>Cambiar Orden de Ordenamiento</h3>
+                    <p>Para cambiar el orden de ordenamiento de los procesos:</p>
+                    <ol>
+                        <li>Haz clic en el botón <strong>Cambiar Orden De Ordenamiento</strong>.</li>
+                        <li>Los procesos se reordenarán según el criterio predefinido (por ejemplo, tiempo de ejecución
+                            o
+                            ID).</li>
+                    </ol>
+                </div>
+
+                <div class="manual-section">
+                    <h3>Uniprogramming y Multiprogramming</h3>
+                    <p>Para cambiar entre Uniprogramming y Multiprogramming:</p>
+                    <ol>
+                        <li>Haz clic en el botón <strong>Uniprogramming</strong> para simular un entorno de un solo
+                            proceso a la vez.</li>
+                        <li>Haz clic en el botón <strong>Multiprogramming</strong> para simular un entorno de múltiples
+                            procesos concurrentes.</li>
+                        <li>Los resultados de la simulación se mostrarán en las secciones correspondientes debajo de los
+                            botones.</li>
+                    </ol>
+                </div>
+
+                <div class="manual-section">
+                    <h3>Alerta de Error</h3>
+                    <p>En caso de que haya un error o falten datos al agregar un proceso, se mostrará una alerta roja en
+                        la parte inferior del formulario. Revisa la alerta para corregir los errores e intenta
+                        nuevamente.</p>
+                </div>
+            </div>
+            <div class="manual-footer">
+                <p>UNIVERSIDAD FRANCISCO DE PAULA SANTANDER - CURSO SISTEMAS OPERATIVOS - GRUPO 3
+                    PROFESOR FABIAN MIGUEL ROBLES - © 2024-1</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
